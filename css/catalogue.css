@@ -1,0 +1,154 @@
+section {
+    border: 2px ridge #deb887;
+    box-shadow: 0 0 5px #deb887;
+    border-radius: 2%;
+    width: 230px;
+    height: 460px;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px;
+}
+
+.book-cover {
+    width: 200px;
+    height: 300px;
+    padding-top: 7px;
+    align-items: center;
+}
+
+.book-title, .book-author, .amount{
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 0 !important;
+    padding: 5px;
+}
+
+.book-title {
+    font-weight: bold;
+    width: 100% !important;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.book-author {
+    width: 100% !important;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.cat-btn {
+    width: 95px;
+    height: 45px;
+    padding: 12px;
+    margin-bottom: 7px;
+    font-family: "Lucida Console", "Courier New", monospace;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #E8D2AE;
+    color: black;
+}
+
+.cat-btn:hover {
+    background-color: #D7B29D;
+    color: black;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#bookssearch-globalsearch {
+    width: 95%;
+}
+
+.field-bookssearch-globalsearch {
+    width: 220px !important;
+}
+
+#w0 {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin: 20px;
+}
+
+.search-book-submit-btn {
+    background: none;
+    padding: 0 !important;
+    height: 38px;
+    margin-top: 24px;   
+}
+
+.search-book-submit-btn > img {
+    width: 35px;
+    height: 36px;
+    margin: 0 0 0 5px !important;
+}
+
+select {
+    height: 38px !important;
+    margin-top: 23px !important;
+}
+
+.dropdown-btn {
+    position: relative;
+    width: 100px !important;
+}
+
+.genres-drop {
+    position: absolute;
+    background-color: lightgrey;
+    z-index : 1;
+    white-space: pre;
+    border-radius: 5px;
+    display: none;
+    overflow-x: auto;
+    overflow-y: scroll;
+    height: 250px !important;
+}
+
+.btn-genres-drop-div {
+    margin-top: 24px;
+    height: 38px;
+}
+
+.genres-drop > label {
+    padding: 3px;
+}
+
+.nav-item {
+    padding: 0 !important;
+}
+
+@media(max-width:757px) {
+    main {
+        margin-left: 5%;
+    }
+
+    form{
+        display: flex;
+        flex-direction: column !important;
+        align-self: center !important;
+    }
+
+    .btn-genres-drop-div {
+        width: 100px;
+    }
+
+    .search-book-submit-btn {
+        width: 100px;
+
+    }
+
+    h1 {
+        font-size: 75px !important;
+    }
+}

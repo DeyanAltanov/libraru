@@ -1,0 +1,12 @@
+td > a:first-child {
+    visibility: hidden;
+}
+
+tr:first-child,  tr > :nth-child(3) {
+    width: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
